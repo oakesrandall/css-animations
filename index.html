@@ -7,9 +7,21 @@
 </head>
 <body>
 
-	<div id="greeting">Hello Friend.</div>
+	<div id="image" class="alt">
+		<button id="carlton" type="button">Carlton?</button>
+		<img src="img/cat.jpg">
+		<img id="dancingCarlton" src="http://i.imgur.com/hPvp4RN.gif">
+		<h2>Carlton has to dance.  Just try to stop him!</h2>
+	</div>
+
+
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	
+	<script type="text/javascript">
+
+		$("#carlton").click(function() {
+  		$("#dancingCarlton").toggle();  
+});
+	</script>
 </body>
 </html>
